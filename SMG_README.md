@@ -3,7 +3,7 @@
 https://github.com/ding-lab/MuSiC2<br>
 http://gmt.genome.wustl.edu/packages/genome-music/documentation.html
 
-<b>SMG walkthrough on the MGI server</b> / work log for using MuSiC2 to call SMGs for CPTAC3 UCEC samples
+<b>MuSic2 SMG walkthrough for use on the MGI server</b> / work log for using MuSiC2 to call SMGs for CPTAC3 UCEC samples
 
 Files needed:
 1. <b> Regions-of-interest (ROI) file: </b> text file with 4 tab delimited columns [chromosome start stop name_of_region]; ROIs from the same chromosome must be listed adjacent to each other in this file; overlapping ROIs of the same gene must be merged. BEDtools' mergeBed can help if used per gene.
