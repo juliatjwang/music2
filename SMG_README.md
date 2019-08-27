@@ -84,11 +84,11 @@ Example for UCEC MSI:
 
 <b>----Run "music2 smg" to get list of SMGs----</b>
 
+The "GENE_MRS_FILE" is an output from the previous step, "music2 bmr calc-bmr". <br> 
 For an FDR cut-off of 0.05:
 
 `bsub -q research-hpc -n 1 -R "select[mem>30000] rusage[mem=30000]" -M 30000000 -a 'docker(juliatjwang/music2:fixed_withR)' -oo LOG_FILE_HERE music2 smg --gene-mr-file GENE_MRS_FILE_HERE --output-file SMG_OUTPUT_FILE_HERE --max-fdr 0.05`
 
-The "GENE_MRS_FILE" is an output from the previous step, "music2 bmr calc-bmr". 
 This will output the files "smgs", "smgs_detailed", "smgs_test_qq_plot.pdf", "corrected_smg_test_qq_plot.pdf"
 
 EXAMPLE for UCEC MSI:
