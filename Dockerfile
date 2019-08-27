@@ -1,3 +1,6 @@
+#This is the dockerfile for juliatjwang/music2:fixed_withR
+#Adapted from felixhu's dockerfile for music2.
+
 FROM ubuntu:xenial
 
 RUN apt-get update && apt-get install -y  build-essential libnss-sss\
